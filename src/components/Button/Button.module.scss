@@ -1,0 +1,220 @@
+$verde: #00A86B;
+$verde-hover: #008e5b;
+$rojo: #FF0000;
+$rojo-hover: #d80000;
+$azul: #007bff;
+$azul-hover: #0056b3;
+$gris: #4d4d4d;
+$darkGray: #333333;
+$light: #ffffff;
+$white: #ffffff;
+$darkdisabled: #666666;
+
+.buttonWrapper {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: '20px';
+    align-items: center;
+}
+
+.button {
+    background-color: transparent;
+    color: $light;
+    border: none;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.disabled{
+    opacity: 30%;
+    cursor: default;
+}
+
+.success {
+    background-color: $verde;
+    border: $verde;
+}
+
+.success:hover {
+    background-color: $verde-hover;
+    border: $verde-hover;
+}
+
+.neutralgray {
+    background-color: $darkGray;
+    border: $darkGray;
+}
+
+.neutralgray:hover {
+    background-color: $gris;
+    border: $gris;
+}
+
+.neutral {
+    background-color: #5E5E5E;
+    border: #5E5E5E;
+}
+
+.neutral:hover {
+    background-color: #6f6f6f;
+    border: #6f6f6f;
+}
+
+.transparent {
+    background-color: transparent;
+    border: 1px solid #cccccc;
+}
+
+.info {
+    background-color: $azul;
+    color: $light;
+}
+
+.info:hover {
+    background-color: $azul-hover;
+}
+
+.error {
+    background-color: $rojo;
+    border: $rojo;
+}
+.error:hover {
+    background-color: $rojo-hover;
+    border: $rojo-hover;
+}
+.outline.success {
+    background-color: transparent;
+    color: $verde;
+    border: 2px solid $verde;
+}
+.outline.success:hover {
+    background-color: $verde;
+    color: $white;
+    border: 2px solid $verde;
+}
+.outline.error {
+    background-color: transparent;
+    color: $rojo;
+    border: 2px solid $rojo;
+}
+.outline.error:hover {
+    background-color: $rojo;
+    color: $white;
+    border: 2px solid $rojo;
+}
+.ghost.success {
+    border: none;
+    background-color: transparent;
+    color: $verde;
+}
+.ghost.success:hover {
+    border: none;
+    background-color: transparent;
+    color: $verde-hover;
+}
+.ghost.error {
+    border: none;
+    background-color: transparent;
+    color:$rojo
+}
+.ghost.error:hover {
+    border: none;
+    background-color: transparent;
+    color: $rojo
+}
+.ghost{
+    border:none;
+    background-color: transparent;
+    color: $azul
+}
+
+.ghost:hover{
+    border:none;
+    background-color: transparent;
+    color: $azul
+}
+.rounded {
+    border-radius: 50px;
+}
+.animatedButton {
+    display: flex;
+    font-weight: bolder;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+    color:$azul;
+    padding: 10px 15px;
+    background-color: $light;
+    border-radius: 5px;
+    border: $azul;
+    width: fit-content;
+    gap:10px;
+    .icon {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        * {
+            margin: 0;
+            padding: 0;
+            height: 18px;
+            fill: $light;
+            width: auto;
+        }
+    }
+}
+.animatedSuccess {
+    background-color: $verde;
+    color: $light;
+}
+.animatedError {
+    background-color: $rojo;
+    color: $light;
+    .icon {
+        * {
+            fill: $light;
+        }
+    }
+}
+
+.animatedLoading {
+    background-color: $gris;
+    color: $darkdisabled;
+    color: $light;
+    .icon {
+        * {
+            fill: $light;
+
+        }
+    }
+}
+.animatedMedium {
+    font-size: 16px;
+    .icon {
+        * {
+            height: 20px;
+        }
+    }
+}
+
+.animatedBig {
+    font-size: 18px;
+    .icon {
+        * {
+            height: 22px;
+        }
+    }
+}
+
+.animatedXxl {
+    font-size:20px;
+    .icon {
+        * {
+            height: 24px;
+        }
+    }
+}

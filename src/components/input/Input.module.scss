@@ -1,0 +1,63 @@
+$darkdisabled:#222222be;
+$ligth: #e6e8e8;
+$infoDark: #015c6a;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+}
+
+.inputWrapper {
+    background-color: $light;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    border-radius: 5px !important;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 14px;
+    color: $infoDark;
+    font-weight: bolder;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 15px 10px 15px;
+    background-color: transparent;
+    display: flex;
+    margin: 0px;
+    border: none;
+    outline: none;
+}
+.input:disabled {
+    opacity: 70%;
+}
+
+.prefixText {
+    color: $darkdisabled;
+    font-weight: 600;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+input:-webkit-autofill {
+    background-color: inherit !important;
+    color: inherit !important;
+}
+
+input:-moz-autofill {
+    background-color: inherit !important;
+    color: inherit !important;
+}
+
+/* For Edge */
+input:-ms-autofill {
+    background-color: inherit !important;
+    color: inherit !important;
+}
