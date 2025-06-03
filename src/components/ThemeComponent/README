@@ -1,0 +1,9 @@
+// import { ThemeProvider } from '@/context';
+
+// function App() {
+//   return (
+//     <ThemeProvider>
+//       {/* Tu aplicación */}
+//     </ThemeProvider>
+//   );
+// }

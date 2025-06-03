@@ -1,0 +1,40 @@
+@use '../../styles/variables' as *;
+
+.switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #e5e7eb; 
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  
+    &__enabled {
+      background-color: #34d399; 
+    }
+  
+    &__disabled {
+      background-color: #9ca3af; 
+    }
+  }
+  
+  .switch__slider {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  
+    &__enabled {
+      transform: translateX(25px);
+    }
+  
+    &__disabled {
+      transform: translateX(-15px);
+    }
+  }
+  
